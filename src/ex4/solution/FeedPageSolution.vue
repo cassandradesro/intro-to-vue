@@ -3,21 +3,21 @@
     <div class="col s6">
       <div class="card">
         <div class="card-content">
-          <span class="card-title">Add Post</span>
-            <!-- Need to render FeedForm Component here and pass onsubmit as prop-->
+          <span class="card-title">Add Post</span>    
+          <FeedForm v-bind:onSubmit="pushPost" />
         </div>
       </div>
     </div>
     <div class="col s6">
       <h5>Posts</h5>
-      <!-- Need to render FeedList Component here and pass posts as prop-->
+      <FeedList v-bind:posts="posts" />
     </div>
 </div>
 </template>
 
 <script>
-import FeedList from "./FeedList";
-import FeedForm from "./FeedForm";
+import FeedList from "./FeedListSolution";
+import FeedForm from "./FeedFormSolution";
 
 export default {
   name: "FeedPage",
@@ -29,6 +29,7 @@ export default {
   },
   methods: {
     pushPost: function(post) {
+      console.log(post);
       this.posts.push({ ...post, id: this.posts.length });
     }
   }

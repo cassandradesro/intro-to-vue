@@ -8,6 +8,7 @@ import BoundInput from "./ex1/BoundInputSolution";
 import List from "./ex2/List";
 //import Feed from "./ex3/FeedSolution";
 import Feed from "./ex3/Feed";
+//import FeedPage from "./ex4/solution/FeedPageSolution";
 import FeedPage from "./ex4/FeedPage";
 
 Vue.config.productionTip = false;
