@@ -13,6 +13,10 @@
       </h4>
       <span>Chief robot whisperer at Obones</span>
     </li>
+    <li :key="person.id" v-for="person in people">
+      <h4>{{person.name}}</h4>
+      <span> {{person.title}} at {{person.company}}</span>
+    </li>
   </ul>
 </div>
 </template>

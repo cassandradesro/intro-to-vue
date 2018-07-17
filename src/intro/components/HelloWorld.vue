@@ -2,10 +2,14 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div class="input-field ">
-      <input type="text" name="msg" id="msg">
+      <input type="text" name="msg" id="msg" v-model="msg">
       <label for="msg">Msg</label>
     </div>
+    <ol>
+      <li :key="thing" v-for="thing in things">{{thing}}</li>
+    </ol>
   </div>
+  
 </template>
 
 <script>

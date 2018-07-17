@@ -6,10 +6,10 @@
   and the submit button to alertResult
    -->
    <div class="input-field">
-    <input type="text" name="title" id="title"/>
+    <input type="text" name="title" id="title" v-bind="title"/>
     <label for="title">Title</label>
    </div>
-  <button class="btn waves-effect waves-light">Submit</button>
+  <button v-on:click="alertResult" class="btn waves-effect waves-light">Submit</button>
 </div>
 </div>
 </template>
@@ -27,7 +27,7 @@ export default {
   methods: {
     alertResult: function() {
       // alter this method to alert the value of title
-      alert("hey");
+      alert("hey cassandra girl!");
     }
   }
 };

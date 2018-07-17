@@ -35,6 +35,7 @@ export default {
   methods: {
     pushPost: function() {
       //Need to call onSubmit prop fn to update posts array
+      this.onSubmit(this.currentPost);
       this.currentPost.body = "";
       this.currentPost.title = "";
     }

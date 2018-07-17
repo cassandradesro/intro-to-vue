@@ -2,8 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from "vue";
 import App from "./intro/App";
-import BoundInput from "./ex1/BoundInputSolution";
-//import BoundInput from "./ex1/BoundInput";
+// import BoundInput from "./ex1/BoundInputSolution";
+import BoundInput from "./ex1/BoundInput";
 //import List from "./ex2/ListSolution";
 import List from "./ex2/List";
 //import Feed from "./ex3/FeedSolution";
@@ -17,5 +17,5 @@ Vue.config.productionTip = false;
 new Vue({
   el: "#app",
   components: { App, BoundInput, List, Feed, FeedPage },
-  template: "<App/>"
+  template: "<FeedPage/>"
 });
